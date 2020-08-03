@@ -9,7 +9,7 @@ Usage: python holistic.py <in.amplicons.bed> <in.gothic.csv> <float: q-value thr
 
 ## Input
 ### BED file
-The BED file must be a sequence of the records of the following format:
+The BED file must be a sequence of records of the following format:
 ```
 chr	start	end	ID
 ```
