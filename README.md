@@ -22,3 +22,14 @@ They will have the following BED input file:
 
 
 The BED file can be created using the output from programs that reconstruct circular eccDNA (like AmpliconArchitect or CouGaR).
+
+## Output
+
+Assume that we have the following predicted double minute chromosome:
+
+```
+
+
+
+```
+The output has the following format:
