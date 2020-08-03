@@ -8,7 +8,7 @@ Usage: python holistic.py <in.amplicons.bed> <in.gothic.csv> <float: q-value thr
 ```
 
 ## Input
-### BED file format
+### BED file
 The BED file must be a sequence of the records of the following format:
 ```
 chr	start	end	ID
@@ -20,8 +20,10 @@ For example, for the following double minutes predicted in the same dataset:
 
 They will have the following BED input file:
 
-
 The BED file can be created using the output from programs that reconstruct circular eccDNA (like AmpliconArchitect or CouGaR).
+
+### CSV file
+
 
 ## Output
 
