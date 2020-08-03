@@ -1,4 +1,4 @@
-# HolistIC: Predict double minute architectures where amplicons have significant pairwise chromatin interaction.
+# HolistIC: Unambiguous prediction of multiple double minute chromosome architectures.
 HolistIC quick start
 
 Usage: python holistic.py <in.amplicons.bed> <in.gothic.csv> <float: q-value threshold> <autosomes only Y|N>
