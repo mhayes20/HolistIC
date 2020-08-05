@@ -14,6 +14,8 @@ matplotlib: https://matplotlib.org/users/installing.html#installation-guide </br
 rpy2: https://pypi.org/project/rpy2/
 
 ## Input
+The BED file are WGS-based coordinates of contiguous regions of copy number amplification, organized by contig. The CSV file is the dumped output from the GOTHiChicup function of the GOTHiC package. The input to HolistIC is data assumed to come from the same individual.
+
 ### BED file
 
 The BED file must be a sequence of records of the following format:
