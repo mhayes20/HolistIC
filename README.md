@@ -68,7 +68,7 @@ chr18	12000000	13000000	DM1
 ```
 This is due to ambiguity induced by the red amplicon since the WGS data shows a red-blue-yellow-red-orange-green-red cycle.
 
-If the CSV file of Hi-C interactions is provided, HolistIC will attempt to segregate each amplicon (i.e. row in BED file) into its true double minute. In the ideal case, HolistIC would have the following output for the above input BED file:
+If the CSV file of Hi-C interactions is provided, HolistIC will attempt to segregate each amplicon (i.e. row in BED file) into its true double minute. In the ideal case, HolistIC would have the following output for the above input BED file (written to [input file name].disambig.bed):
 ```
 chr1	8000000		8900000		DM1
 chr3	7000000		7400000		DM1
