@@ -1,3 +1,4 @@
+
 # HolistIC: Unambiguous prediction of multiple double minute chromosome architectures
 ```
 Usage: python holistic.py <in.amplicons.bed> <in.gothic.csv> <float: q-value threshold> <autosomes only Y|N>
@@ -6,6 +7,10 @@ Usage: python holistic.py <in.amplicons.bed> <in.gothic.csv> <float: q-value thr
 		q-value threshold:     Count interaction as significant if q-value is less than or equal this value. (Recommended: 0.05).
 		autosomes?:            If Y, HolistIC will look for interactions on the whole genome including X and Y chromosomes.
 ```
+##Prequisites
+Python 3+
+Python Networkx
+https://networkx.github.io/documentation/stable/install.html
 
 ## Input
 ### BED file
@@ -28,7 +33,6 @@ chr5	3000000		3300000		DM1
 chr4	2000000		2300000		DM2
 chr11	6000000		6800000		DM2
 chr18	20000000	20200000	DM2
-
 ```
 
 The BED file can be created using the output from programs that reconstruct circular eccDNA architectures (like AmpliconArchitect or CouGaR).
