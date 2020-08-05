@@ -49,11 +49,22 @@ https://master.bioconductor.org/packages/release/bioc/manuals/GOTHiC/man/GOTHiC.
 
 ## Output
 
-Assume that we have the following predicted double minute chromosome:
+Assume that we have the following double minutes:
 
+
+Due to ambiguities inherent in WGS-only predictions, the above double minutes could have resulted in the following input BED file, where all amplicons are erroneously assumed to be part of the same double minute (remember that the records are lexicographically sorted by chromosome and then sorted ascending by start position of interval):
+
+```
+chr1	8000000		8900000		DM1
+chr3	7000000		7400000		DM1
+chr5	3000000		3300000		DM1
+chr6	17000000	17800000	DM1
+chr18	12000000	13000000	DM1
+```
+This is due to ambiguity induced by the red amplicon since the WGS data shows a red-blue-yellow-red-orange-green-red cycle.
+
+If the CSV file of Hi-C interactions is provided, HolistIC will attempt to segregate each amplicon (i.e. row in BED file) into its true double minute. In the ideal case, HolistIC would have the following output for the above input BED file:
 ```
 
 
-
 ```
-The output has the following format:
