@@ -9,8 +9,8 @@ Usage: python holistic.py <in.amplicons.bed> <in.gothic.csv> <float: q-value thr
 ```
 ## Prequisites
 Tested with Python 2.7 but Python 3+ should work too</br>
-Python Networkx: https://networkx.github.io/documentation/stable/install.html
-matplotlib: https://matplotlib.org/users/installing.html#installation-guide
+Python Networkx: https://networkx.github.io/documentation/stable/install.html </br>
+matplotlib: https://matplotlib.org/users/installing.html#installation-guide </br>
 rpy2: https://pypi.org/project/rpy2/
 
 ## Input
