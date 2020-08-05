@@ -11,7 +11,7 @@ Usage: python holistic.py <in.amplicons.bed> <in.gothic.csv> <float: q-value thr
 ### BED file
 
 Assume that we have the following NGS-based predicted double minutes (i.e. where we know the breakpoints of the amplicons and their adjacencies):
-<img width="1094" alt="holistic github fig1 " src="https://user-images.githubusercontent.com/10326087/89368209-8c966780-d6a0-11ea-8da9-4eda862993e2.png">
+<img width="594" alt="holistic github fig1 " src="https://user-images.githubusercontent.com/10326087/89368209-8c966780-d6a0-11ea-8da9-4eda862993e2.png">
 
 The BED file must be a sequence of records of the following format:
 ```
