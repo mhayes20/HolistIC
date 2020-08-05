@@ -8,7 +8,7 @@ Usage: python holistic.py <in.amplicons.bed> <in.gothic.csv> <float: q-value thr
 		autosomes?:            If Y, HolistIC will look for interactions on the whole genome including X and Y chromosomes.
 ```
 ## Prequisites
-Python 3+
+Python 3
 Python Networkx
 https://networkx.github.io/documentation/stable/install.html
 
