@@ -22,7 +22,7 @@ https://s3.amazonaws.com/meh52-B1/Simulated.hic.gothic.results.csv.gz
 python holistic.py dmfinder.HG38.wgs.results.SORTED.bed Simulated.hic.gothic.results.csv 0.05 Y
 ```
 ## Input
-The BED file are WGS-based coordinates of contiguous regions of copy number amplification, organized by contig. The CSV file is the dumped output from the GOTHiChicup function of the GOTHiC package. The input to HolistIC is data assumed to come from the same individual.
+The BED file contains WGS-based coordinates of contiguous regions of copy number amplification, organized by contig. The CSV file is the dumped output from the GOTHiChicup function of the GOTHiC package. The input to HolistIC is data assumed to come from the same individual.
 
 ### BED file
 
