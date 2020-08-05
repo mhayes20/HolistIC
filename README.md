@@ -51,6 +51,7 @@ https://master.bioconductor.org/packages/release/bioc/manuals/GOTHiC/man/GOTHiC.
 
 Assume that we have the following double minutes:
 
+<img width="592" alt="Screen Shot 2020-08-04 at 11 41 58 PM" src="https://user-images.githubusercontent.com/10326087/89373196-ab4f2b00-d6ad-11ea-9754-cd557d9bc3c0.png">
 
 Due to ambiguities inherent in WGS-only predictions, the above double minutes could have resulted in the following input BED file, where all amplicons are erroneously assumed to be part of the same double minute (remember that the records are lexicographically sorted by chromosome and then sorted ascending by start position of interval):
 
@@ -65,6 +66,12 @@ This is due to ambiguity induced by the red amplicon since the WGS data shows a 
 
 If the CSV file of Hi-C interactions is provided, HolistIC will attempt to segregate each amplicon (i.e. row in BED file) into its true double minute. In the ideal case, HolistIC would have the following output for the above input BED file:
 ```
-
-
+chr1	8000000		8900000		DM1
+chr3	7000000		7400000		DM1
+chr5	3000000		3300000		DM1
+chr6	17000000	17800000	DM2
+chr18	12000000	13000000	DM2
+chr5	3000000		3300000		DM2
 ```
+
+Furthermore, HolistIC will create PNG image files for each identified maximal clique, which ostensibly refer to separate double minutes. 
