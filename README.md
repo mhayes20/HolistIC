@@ -15,7 +15,7 @@ rpy2: https://pypi.org/project/rpy2/
 
 ## Quick Start
 
-The sample CSV file can be downloaded here:
+The sample BED file is provided in this repository. The sample CSV file can be downloaded here:
 https://s3.amazonaws.com/meh52-B1/Simulated.hic.gothic.results.csv.gz
 
 ```
