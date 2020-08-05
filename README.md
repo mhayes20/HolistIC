@@ -46,12 +46,12 @@ chr11	6000000		6800000		DM2
 chr18	20000000	20200000	DM2
 ```
 
-The BED file can be created using the output from programs that reconstruct circular eccDNA architectures (like AmpliconArchitect or CouGaR).
+The BED file can be created using the output from programs that reconstruct circular eccDNA architectures (like AmpliconArchitect or CouGaR). HolistIC does <b>not</b> assume that all connected amplicons are within a circular contig, so incomplete predicted architectures can be considered too. 
 
 WARNING: Within each unique ID in the 4th column, the records must first be sorted in lexicographic order by chromosome, and then in ascending numeric order by the interval start position. This will not preserve the adjacencies provided in the BED file, but this does not adversely affect HolistIC's ability to segregate amplicons by contig. The input BED file can be sorted with the following command:
 
 ```
-sort -k4,4 -k1,1 -k2,2 in.bed > out.bed
+sort -k4,4 -k1,1 -k2,2 in.bed > in.sorted.bed
 ```
 
 ### CSV file
