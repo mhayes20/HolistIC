@@ -7,7 +7,7 @@ Usage: python holistic.py <in.amplicons.bed> <in.gothic.csv> <float: q-value thr
 		q-value threshold:     Count interaction as significant if q-value is less than or equal this value. (Recommended: 0.05).
 		autosomes?:            If Y, HolistIC will look for interactions on the whole genome including X and Y chromosomes.
 ```
-## Prequisites
+## Prerequisites
 Tested with Python 2.7 but Python 3+ should work too</br>
 Python Networkx: https://networkx.github.io/documentation/stable/install.html </br>
 matplotlib: https://matplotlib.org/users/installing.html#installation-guide </br>
